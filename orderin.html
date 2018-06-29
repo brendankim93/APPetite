@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>APPetite</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
+  
+</head>
+<body class="background-image">
+  <header>
+    <div>
+      <a href="index.html"><h2 class="logo">APPetite</h2></a>
+    </div>
+  </header>
+  <div class="curtain-menu-button" data-curtain-menu-button>
+    <div class="curtain-menu-button-toggle">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+    </div>
+  </div>
+  <div class="curtain-menu">
+    <div class="curtain"></div>
+    <div class="curtain"></div>
+    <div class="curtain"></div>
+    <div class="curtain-menu-wrapper">
+      <ul class="curtain-menu-list menu vertical">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="dineout.html">Dine Out</a></li>
+        <li><a href="orderin.html">Order In</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="translucent-form-overlay">
+      <form>
+        <h3>Search for Delivery</h3>
+        <div class="row columns">
+          <label>
+            <input id="address-input" type="text" name="keyword" placeholder="Enter Full Street Address Here..">
+          </label>
+        </div>
+        <button type="button submit" id="submit-address" class="primary button expanded search-button" value="Search for Restaurants">
+          Search
+        </button>
+      </form>
+    </div>
+    <div class="row columns restaurant-options"></div>
+  </div>
+  <div class="push"></div>
+  <footer>
+    <p>Copyright &copy; 2017 Ryan Reynolds, Laurentius Tirtarahardja, Brendan Kim</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery.js"></script> 
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script type="text/javascript" src="assets/javascript/delivery.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
